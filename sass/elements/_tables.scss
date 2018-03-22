@@ -1,0 +1,25 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	border:solid 1px $color__background-hr;
+
+	thead {
+		background-color:$color__link;
+
+		tr {
+			th {
+				color:$color__font-dark-bg;
+				font-family:$font__heading;
+				letter-spacing:0.1rem;
+			}
+		}
+	}
+
+	tr {
+		border-bottom:solid 1px $color__background-hr;
+
+		td, th {
+			padding:0.5rem;
+		}
+	}
+}

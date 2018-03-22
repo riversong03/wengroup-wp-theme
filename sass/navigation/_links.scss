@@ -1,0 +1,35 @@
+a {
+	color: $color__link;
+	text-decoration:none;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+		text-decoration:none;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+		text-decoration:underline;
+	}
+}
+
+.navbar-collapse {
+	ul {
+
+		li.nav-item {
+			text-align:center;
+			
+			a {
+				color: $color__background-body;
+			}
+		}
+	}
+}

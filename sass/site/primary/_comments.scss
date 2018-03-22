@@ -1,0 +1,48 @@
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+	display: block;
+}
+
+.comments-area {
+	width:80%;
+	padding:1.5rem 0rem;
+	margin:0 auto;
+
+	h2.comments-title {
+		padding:0.5rem 1.0rem;
+		border-radius:3px;
+		color:$color__font-dark-bg;
+		background-color:$color__border-blue;
+	}
+
+	ul.comment-list {
+		list-style-type:none;
+		margin:0 0 1.5rem 0;
+
+		li.comment {
+			border-bottom:dotted $color__background-hr 2px;
+			padding:1.0rem 0.5rem;
+		}
+
+		ul.children {
+			list-style-type:none;
+			margin-left:0;
+			padding-left:1.0rem;
+			border-left:solid 5px $color__accent-transparent;
+
+			ul {
+				border-left: solid 5px $color__red-transparent;
+
+				ul {
+					border-left:solid 5px $color__blue-transparent;
+
+					ul {
+						border-left:solid 5px $color__card-background;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.widget {
+	margin: 0 0 1.5em;
+	padding:1.0rem;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+
+	ul#recentcomments {
+		li {
+			list-style-image:url(fonts/fontawesome-webfont.svg);
+		}
+	}
+}
+
+.widget.widget_search {
+	border:0;
+}

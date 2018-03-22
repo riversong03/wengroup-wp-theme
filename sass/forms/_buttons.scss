@@ -1,0 +1,91 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance:none;
+	border: 1px solid;
+	border-color: $color__border-button;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: $color__font-dark-bg;
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .7em 1.5em;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+}
+
+.btn-read {
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+
+	&:hover {
+		color:#000000;
+		background-color:transparent;
+		text-shadow:none;
+
+		&:before {
+			top:0%;
+			bottom:auto;
+			height:100%;
+		}
+	}
+
+	&:before {
+		display:block;
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		height:0px;
+		width:100%;
+		z-index:-1;
+		content:"";
+		color:#000000;
+		background:$color__heading-accent;
+		transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+	}
+
+
+	&:link,
+	&:visited {
+		position:relative;
+		display:block;
+		margin:1.5rem 0 1.0rem;
+		padding:10px 15px;
+		max-width:200px;
+		color:$color__heading-accent;
+		border:solid 2px $color__heading-accent;
+		text-decoration:none;
+		text-transform:uppercase;
+		overflow:hidden;
+		text-shadow: 0 0 1px rgba(0,0,0,0.2), 0 1px 0 rgba(0,0,0,0.2);
+		-webkit-transition: all 0.75s ease;
+		-moz-transition: all 0.75s ease;
+		-o-transition: all 0.75s ease;
+		transition: all 0.75s ease;
+
+		&:after {
+			content:"";
+			position:absolute;
+			height:0%;
+			left:50%;
+			top:50%;
+			width:150%;
+			z-index:-1;
+		}
+
+		&:hover {
+			color:$color__font-dark-bg;
+			background-color:transparent;
+			text-shadow:none;
+		}
+
+	}
+
+}

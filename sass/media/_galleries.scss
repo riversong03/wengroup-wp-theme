@@ -1,0 +1,32 @@
+.gallery {
+	@include flexbox();
+	flex-flow:row wrap;
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: block;
+	text-align: center;
+	width: 100%;
+
+	// Loops to enumerate the classes for gallery columns.
+	@for $i from 2 through 9 {
+		.gallery-columns-#{$i} & {
+			max-width: map-get( $columns, $i );
+		}
+	}
+
+	.gallery-icon {
+		box-shadow:-1px 2px 8px rgba(0,0,0,0.25);
+		width:92%;
+		margin:0.4rem auto;
+		padding:1.0rem 0;
+		border-radius:2px;
+	}
+}
+
+.gallery-caption {
+	display: block;
+	width:90%;
+	font-size:0.85rem;
+}

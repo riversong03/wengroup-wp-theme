@@ -1,0 +1,26 @@
+.search-form {
+    @include flexbox();
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items:center;
+    max-width:98%;
+
+    label {
+        display:inherit;
+        flex-flow:row nowrap;
+        align-items:center;
+        max-width:80%;
+        margin:0;
+    }
+
+    input {
+        margin:0 0.25rem 0 0;
+        max-width:96%;
+    }
+}
+
+
+
+@import "buttons";
+
+@import "fields";
